@@ -1,0 +1,17 @@
+@import './copy-btn.scss';
+
+.bar-box-border {
+	width: 100%;
+	padding: 16px;
+	border-radius: 10px;
+	border: 1px solid $border-dark;
+	background-color: $dark;
+	overflow: hidden;
+}
+
+.bar-box {
+	width: 100%;
+	border-radius: 10px;
+	overflow: hidden;
+	background-color: $dark;
+}

@@ -1,0 +1,23 @@
+.footer {
+	display: flex;
+	align-items: center;
+	gap: 15px;
+	margin: 0 auto;
+  padding: 16px;
+	width: -webkit-fit-content;
+	width: -moz-fit-content;
+	width: fit-content;
+	&__year {
+		font-size: 14px;
+		font-weight: bold;
+		background-color: rgb(40 40 40);
+		padding: 3px 8px;
+		border-radius: 5px;
+		display: block;
+	}
+
+	&__dev {
+		font-size: 16px;
+		display: block;
+	}
+}

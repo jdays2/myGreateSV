@@ -1,0 +1,19 @@
+.home {
+	display: flex;
+	justify-content: space-between;
+
+	&__content {
+		width: 610px;
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+	}
+
+	&__left-bar {
+		width: 290px;
+	}
+
+	&__right-bar {
+		width: 250px;
+	}
+}

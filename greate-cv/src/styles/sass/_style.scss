@@ -1,0 +1,37 @@
+@import './fonts';
+@import './set';
+@import './mixins';
+@import './ui/ui';
+@import './text';
+
+@import './components/home';
+@import './components/home-message';
+@import './components/download-sv';
+@import './components/profile';
+@import './components/footer';
+@import './components/stats';
+
+// body
+body {
+	background-color: $black;
+	color: $txt-gray;
+	.lock & {
+		overflow: hidden;
+		touch-action: none;
+	}
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 30px 0;
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	justify-content: space-between;
+	position: relative;
+	overflow: hidden;
+}

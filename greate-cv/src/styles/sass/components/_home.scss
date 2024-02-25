@@ -1,0 +1,16 @@
+.home {
+	display: flex;
+	justify-content: space-between;
+
+	&__content {
+		width: 520px;
+	}
+
+	&__left-bar {
+		width: 250px;
+	}
+
+	&__right-bar {
+		width: 250px;
+	}
+}

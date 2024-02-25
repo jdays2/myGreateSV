@@ -11,7 +11,7 @@ export const HomeMessage = () => {
 			</div>
 
 			<div className="home-message__text">
-				<h1 className="txt-2xl">Mark 'JDayS' Gorsharik</h1>
+				<h1 className="txt-2xl">Frontend Developer</h1>
 				<p className="txt-sm txt-neutral">
 					Saif Al-Jilani, Experienced Web Developer with 3 years in software
 					engineering, specializing in React JS, Tailwind, Ant Design, and

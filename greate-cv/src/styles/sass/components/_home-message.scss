@@ -1,6 +1,9 @@
 .home-message {
+	width: 100%;
 	display: flex;
 	gap: 20px;
+	padding-bottom: 30px;
+	border-bottom: 2px solid $border-dark;
 
 	&__text {
 		display: flex;

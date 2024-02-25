@@ -7,6 +7,9 @@
 @import './components/home';
 @import './components/home-message';
 @import './components/download-sv';
+@import './components/profile';
+@import './components/footer';
+@import './components/stats';
 
 // body
 body {
@@ -21,7 +24,7 @@ body {
 .container {
 	max-width: 1200px;
 	margin: 0 auto;
-	padding: 20px 0;
+	padding: 30px 0;
 }
 
 .wrapper {

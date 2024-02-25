@@ -3,11 +3,14 @@
 	justify-content: space-between;
 
 	&__content {
-		width: 520px;
+		width: 610px;
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
 	}
 
 	&__left-bar {
-		width: 250px;
+		width: 290px;
 	}
 
 	&__right-bar {

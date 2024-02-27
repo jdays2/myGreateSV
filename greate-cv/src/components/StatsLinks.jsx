@@ -20,7 +20,8 @@ export const StatsLinks = () => {
 						<div className="stats__item-box">
 							<p className="stats__item-title">Codewars</p>
 							<p className="stats__item-desc txt-sm txt-neutral">
-								A lot of contributions to open source projects
+								Rank:5 kyu <br />
+								Total Completed Kata:78
 							</p>
 						</div>
 					</a>

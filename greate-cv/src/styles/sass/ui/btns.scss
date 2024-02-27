@@ -37,3 +37,22 @@
 		}
 	}
 }
+
+.back-btn {
+	padding: 6px;
+	border-radius: 5px;
+	display: flex;
+	align-items: center;
+	gap: 5px;
+
+	span {
+		display: block;
+	}
+
+	svg {
+		width: 1rem;
+		height: 1rem;
+		-o-object-fit: contain;
+		object-fit: contain;
+	}
+}

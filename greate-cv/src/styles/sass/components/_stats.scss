@@ -7,7 +7,7 @@
 		gap: 20px;
 		padding: 16px;
 		align-items: center;
-		transition: background-color 0.2s ease-out;
+		
 
 		&-img {
 			width: 90px;
@@ -29,10 +29,6 @@
 			flex-direction: column;
 		}
 
-		@media (hover: hover) {
-			&:hover {
-        background-color: rgb(40 40 40);
-			}
-		}
+		@extend %hover-light;
 	}
 }

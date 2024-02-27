@@ -116,3 +116,26 @@ $dark: rgb(28 28 28);
 .txt-neutral {
 	color: $txt-neutral;
 }
+
+%hover-light {
+	@media (hover: hover) {
+		transition: background-color 0.2s ease-out;
+		&:hover {
+			background-color: rgb(40 40 40);
+		}
+	}
+}
+
+%hover-gray {
+	background-color: $gray;
+	transition: background-color 0.2s ease-out;
+	@media (hover: hover) {
+		&:hover {
+			background-color: $txt-neutral;
+		}
+	}
+
+	&:active {
+		background-color: rgb(60, 60, 60);
+	}
+}

@@ -1,20 +1,16 @@
-import {
-	createBrowserRouter,
-	createRoutesFromElements,
-	Route,
-} from 'react-router-dom';
-import App from './App';
+import { createBrowserRouter } from 'react-router-dom';
 import { HomePage } from './screens/HomePage';
+import { MainContainer } from './components/ui/MainContainer';
+import { ProjectDetails } from './screens/ProjectDetails';
 
-export const router = createBrowserRouter(
-	createRoutesFromElements(
-		<Route
-			path="/"
-			element={<App />}>
-			<Route
-				index="true"
-				element={<HomePage />}
-			/>
-		</Route>,
-	),
-);
+export const router = createBrowserRouter([
+	{
+		element: <MainContainer />,
+		path: '/',
+		children: [
+			{ element: <HomePage />, index: true },
+			{ element: <HomePage />, path: 'home' },
+			{ element: <ProjectDetails />, path: 'project/:id' },
+		],
+	},
+]);

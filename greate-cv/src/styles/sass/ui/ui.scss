@@ -1,4 +1,4 @@
-@import './copy-btn.scss';
+@import './btns.scss';
 
 .bar-box-border {
 	width: 100%;
@@ -14,4 +14,19 @@
 	border-radius: 10px;
 	overflow: hidden;
 	background-color: $dark;
+}
+
+.border-bottom {
+	padding-bottom: 20px;
+	border-bottom: 2px solid $border-dark;
+	margin-bottom: 20px;
+}
+
+.sticky {
+	position: -webkit-sticky;
+	position: sticky;
+	top: 30px;
+	height: -webkit-fit-content;
+	height: -moz-fit-content;
+	height: fit-content;
 }

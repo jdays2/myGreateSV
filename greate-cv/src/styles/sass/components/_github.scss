@@ -1,0 +1,16 @@
+.github {
+	padding: 16px;
+	&__img {
+		width: 100%;
+		height: auto;
+    border-radius: 5px;
+    overflow: hidden;
+
+		img {
+			width: 100%;
+			height: auto;
+			-o-object-fit: cover;
+			   object-fit: cover;
+		}
+	}
+}

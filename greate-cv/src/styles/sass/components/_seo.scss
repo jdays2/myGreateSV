@@ -1,0 +1,27 @@
+.seo {
+	padding: 16px;
+	display: flex;
+
+	&__box {
+		display: flex;
+		margin: 0 auto;
+		gap: 16px;
+		justify-content: center;
+	}
+
+	&__icon {
+		width: 2rem;
+		height: 2rem;
+		display: block;
+		svg {
+			width: 100%;
+			height: 100%;
+			-o-object-fit: contain;
+			object-fit: contain;
+		}
+	}
+
+	&__txt {
+		width: 70%;
+	}
+}

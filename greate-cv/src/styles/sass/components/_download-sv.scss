@@ -20,25 +20,15 @@
 	&__link {
 		width: 100%;
 		border-radius: 5px;
-		background-color: $gray;
-		transition: background-color 0.2s ease-out;
 		padding: 4px;
 		text-align: center;
+
+		@extend %hover-gray;
 
 		&-txt {
 			font-weight: 500;
 			text-transform: uppercase;
 			color: $white;
-		}
-
-		@media (hover: hover) {
-			&:hover {
-				background-color: $txt-neutral;
-			}
-		}
-
-		&:active {
-			background-color: rgb(60, 60, 60);
 		}
 	}
 }

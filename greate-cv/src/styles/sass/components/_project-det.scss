@@ -1,0 +1,52 @@
+.project-det {
+	&__sliders-wrap {
+		padding: 16px;
+	}
+
+	&__title {
+	}
+
+	&__head {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding-bottom: 20px;
+	}
+
+	&__slider {
+		&--second {
+			padding-top: 16px;
+			.project-det__slider-card {
+				height: 80px;
+				transition: filter 0.2s ease-in-out, -webkit-filter 0.2s ease-in-out;
+				-webkit-filter: brightness(40%);
+				filter: brightness(40%);
+				cursor: pointer;
+
+				&.swiper-slide-thumb-active {
+					-webkit-filter: brightness(100%);
+					filter: brightness(100%);
+				}
+
+				@media (hover: hover) {
+					&:hover {
+						-webkit-filter: brightness(100%);
+						filter: brightness(100%);
+					}
+				}
+			}
+		}
+		&-card {
+			height: 300px;
+			border-radius: 5px;
+			overflow: hidden;
+
+			img {
+				width: 100%;
+				height: 100%;
+				-o-object-fit: cover;
+				object-fit: cover;
+			}
+		}
+	}
+}

@@ -4,12 +4,21 @@
 @import './ui/ui';
 @import './text';
 
-@import './components/home';
+@import './components/main-container';
 @import './components/home-message';
 @import './components/download-sv';
 @import './components/profile';
 @import './components/footer';
 @import './components/stats';
+@import './components/work';
+@import './components/lang';
+@import './components/socials';
+@import './components/seo';
+@import './components/projects';
+@import './components/project-det';
+@import './components/github';
+
+@import './ui/social-link';
 
 // body
 body {

@@ -8,7 +8,7 @@ import { LiaProjectDiagramSolid } from 'react-icons/lia';
 
 export const PersonalInfo = () => {
 	return (
-		<div className="profile">
+		<div className="profile border-bottom">
 			<CopyUrlBtn />
 			<div className="profile__img">
 				<img
@@ -31,11 +31,6 @@ export const PersonalInfo = () => {
 						<p className="text-xs">+375(33)686-27-74</p>
 					</li>
 				</ul>
-
-				<div className="profile__lang-list">
-					<RiSpeakLine className="profile__lang-list-icon" />
-					<p className="text-xs">RU / ENG / BLR</p>
-				</div>
 			</div>
 
 			<ul className="profile__stack">

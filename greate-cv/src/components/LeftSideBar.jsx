@@ -5,14 +5,14 @@ import { WorkHistory } from './WorkHistory';
 import { Languages } from './Languages';
 import { Socials } from './Socials';
 
-export const LeftSideBar = () => {
+export const LeftSideBar = ({ socials }) => {
 	return (
 		<aside className="main-container__left-bar">
 			<BoxBorder sticky>
 				<PersonalInfo />
 				<WorkHistory />
 				<Languages />
-				<Socials />
+				<Socials socials={socials} />
 			</BoxBorder>
 		</aside>
 	);

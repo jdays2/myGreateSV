@@ -1,3 +1,4 @@
+import { CV_URL } from '../../utils/constants';
 import apiSlice from './apiSlice';
 
 export const cvApiSlice = apiSlice.injectEndpoints({

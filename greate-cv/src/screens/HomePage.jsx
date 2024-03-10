@@ -14,7 +14,7 @@ export const HomePage = () => {
 			<HomeMessage />
 			<Projects />
 			<Seo />
-			<StatsLinks />
+			<StatsLinks/>
 			<GitHubStats />
 			<Footer />
 		</div>

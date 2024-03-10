@@ -1,13 +1,18 @@
-import React from 'react'
-import { SocialLink } from './ui/SocialLink'
+import React from 'react';
+import { SocialLink } from './ui/SocialLink';
 
-export const Socials = () => {
-  return (
-    <div className='socials'>
-      <SocialLink type={'telegram'}/>
-      <SocialLink type={'phone'}/>
-      <SocialLink type={'mail'}/>
-      <SocialLink type={'linkedin'}/>
-    </div>
-  )
-}
+export const Socials = ({ socials }) => {
+	return (
+		<div className="socials">
+			{socials.map((link) => {
+				return (
+					<SocialLink
+						key={link.type}
+						type={link.type}
+						link={link.data}
+					/>
+				);
+			})}
+		</div>
+	);
+};

@@ -6,7 +6,7 @@ import { CopyUrlBtn } from './ui/CopyUrlBtn';
 import { FaConnectdevelop } from 'react-icons/fa';
 import { LiaProjectDiagramSolid } from 'react-icons/lia';
 
-export const PersonalInfo = () => {
+export const PersonalInfo = ({ data }) => {
 	return (
 		<div className="profile border-bottom">
 			<CopyUrlBtn />
@@ -18,91 +18,46 @@ export const PersonalInfo = () => {
 			</div>
 
 			<div className="profile__box">
-				<h2 className="profile__box-name txt-xl1">Mark Gorsharik</h2>
+				<h2 className="profile__box-name txt-xl1">
+					{data.firstName} {data.lastName}
+				</h2>
 
 				<ul className="profile__contacts">
 					<li className="profile__contacts-item">
 						<LuMail className="profile__contacts-item-icon" />
-						<p className="text-xs">markgorsharik@gmail.com</p>
+						<p className="text-xs">{data.email}</p>
 					</li>
 
 					<li className="profile__contacts-item">
 						<FiPhone className="profile__contacts-item-icon" />
-						<p className="text-xs">+375(33)686-27-74</p>
+						<p className="text-xs">{data.number}</p>
 					</li>
 				</ul>
 			</div>
 
 			<ul className="profile__stack">
-				<li className="profile__stack-item">
-					<span className="profile__stack-item-txt text-xs">React</span>
-				</li>
-
-				<li className="profile__stack-item">
-					<span className="profile__stack-item-txt text-xs">Redux</span>
-				</li>
-
-				<li className="profile__stack-item">
-					<span className="profile__stack-item-txt text-xs">Axios</span>
-				</li>
-
-				<li className="profile__stack-item">
-					<span className="profile__stack-item-txt text-xs">MongoDB</span>
-				</li>
-
-				<li className="profile__stack-item">
-					<span className="profile__stack-item-txt text-xs">JS</span>
-				</li>
-
-				<li className="profile__stack-item">
-					<span className="profile__stack-item-txt text-xs">TS</span>
-				</li>
-
-				<li className="profile__stack-item">
-					<span className="profile__stack-item-txt text-xs">Node</span>
-				</li>
-
-				<li className="profile__stack-item">
-					<span className="profile__stack-item-txt text-xs">Express</span>
-				</li>
-
-				<li className="profile__stack-item">
-					<span className="profile__stack-item-txt text-xs">HTML</span>
-				</li>
-
-				<li className="profile__stack-item">
-					<span className="profile__stack-item-txt text-xs">SaSS</span>
-				</li>
-
-				<li className="profile__stack-item">
-					<span className="profile__stack-item-txt text-xs">Antd</span>
-				</li>
-
-				<li className="profile__stack-item">
-					<span className="profile__stack-item-txt text-xs">Bootstrap</span>
-				</li>
-
-				<li className="profile__stack-item">
-					<span className="profile__stack-item-txt text-xs">Tailwind</span>
-				</li>
-
-				<li className="profile__stack-item">
-					<span className="profile__stack-item-txt text-xs">Webpack</span>
-				</li>
-
-				<li className="profile__stack-item">
-					<span className="profile__stack-item-txt text-xs">Gulp</span>
-				</li>
+				{data.stack.map((i) => {
+					return (
+						<li
+							key={i}
+							className="profile__stack-item">
+							<span className="profile__stack-item-txt text-xs">{i}</span>
+						</li>
+					);
+				})}
 			</ul>
 
 			<div className="profile__exp">
 				<div className="profile__exp-item">
 					<FaConnectdevelop />
-					<p className="text-xs">1.5 Year as a Developer</p>
+					<p className="text-xs">
+						{data.experience.years}{' '}
+						{data.experience.years >= 2 ? 'Years' : 'Year'} as a Developer
+					</p>
 				</div>
 				<div className="profile__exp-item">
 					<LiaProjectDiagramSolid />
-					<p className="text-xs"> 20+ Projects</p>
+					<p className="text-xs"> {data.experience.projects}+ Projects</p>
 				</div>
 			</div>
 		</div>

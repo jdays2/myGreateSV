@@ -12,7 +12,7 @@ export const MainContainer = () => {
 	) : (
 		data && (
 			<div className="main-container container">
-				<LeftSideBar socials={data[0].socials} />
+				<LeftSideBar data={data[0]}/>
 				<Outlet />
 				<RightSideBar />
 			</div>

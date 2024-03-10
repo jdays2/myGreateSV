@@ -6,8 +6,12 @@ import { Seo } from '../components/Seo';
 import { Projects } from '../components/Projects';
 import { GitHubStats } from '../components/GitHubStats';
 import { useTitle } from '../hooks/useTitle';
+import { useGetCvQuery } from '../redux/slices/cvApiSlice';
 
 export const HomePage = () => {
+	const { data, isLoading, error } = useGetCvQuery();
+
+	console.log(data);
 	useTitle('Home');
 	return (
 		<div className="main-container__content">

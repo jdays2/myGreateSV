@@ -1,0 +1,41 @@
+.form {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	align-items: flex-start;
+	width: 100%;
+
+  &__button {
+    margin-top: 10px
+  }
+
+	&__input {
+		border-radius: 6px;
+		padding: 6px 8px;
+		border: 1px solid $border-dark;
+    width: 100%;
+
+		&-box {
+			display: flex;
+			flex-direction: column;
+			gap: 10px;
+      width: 100%;
+			position: relative;
+			padding-bottom: 18px;
+		}
+
+		&-error {
+			position: absolute;
+			bottom: 0px;
+			right: 0;
+			opacity: 0;
+			transition: 0.4;
+			-webkit-animation: red-pulse 2s infinite;
+			animation: red-pulse 2s infinite;
+
+			&.active {
+				opacity: 1;
+			}
+		}
+	}
+}

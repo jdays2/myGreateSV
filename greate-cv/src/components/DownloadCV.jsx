@@ -15,8 +15,8 @@ export const DownloadCV = () => {
 				<a
 					download
 					href="/public/cv/newYear.pdf"
-					className="download-sv__link">
-					<span className="download-sv__link-txt text-xs">Download my CV</span>
+					className="gray-btn">
+					<span className="gray-btn__txt text-xs">Download my CV</span>
 				</a>
 			</div>
 		</BoxBorder>

@@ -56,3 +56,18 @@
 		object-fit: contain;
 	}
 }
+
+.gray-btn {
+	width: 100%;
+	border-radius: 5px;
+	padding: 4px;
+	text-align: center;
+
+	@extend %hover-gray;
+
+	&__txt {
+		font-weight: 500;
+		text-transform: uppercase;
+		color: $white;
+	}
+}

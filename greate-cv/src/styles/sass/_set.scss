@@ -107,6 +107,8 @@ input[type='number'] {
 
 $white: #fff;
 $gray: rgb(105 105 105);
+$red: rgb(150, 30, 30);
+$red-light: rgb(194, 88, 88);
 $txt-gray: rgb(212 212 212);
 $txt-neutral: rgb(163 163 163);
 $black: rgb(23 23 23);
@@ -137,5 +139,29 @@ $dark: rgb(28 28 28);
 
 	&:active {
 		background-color: rgb(60, 60, 60);
+	}
+}
+
+@-webkit-keyframes red-pulse {
+	0% {
+		color: $red;
+	}
+
+	100% {
+		color: $red-light;
+	}
+}
+
+@keyframes red-pulse {
+	0% {
+		color: $red;
+	}
+
+	50% {
+		color: $red-light;
+	}
+
+	100% {
+		color: $red;
 	}
 }

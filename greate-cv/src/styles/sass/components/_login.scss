@@ -1,0 +1,25 @@
+.login {
+	width: 500px;
+	margin: 100px auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	&__container {
+		display: flex;
+		width: 100%;
+		gap: 12px;
+		align-items: center;
+		flex-direction: column;
+	}
+
+	&__message {
+		display: flex;
+		gap: 6px;
+		color: $gray;
+
+		&-link {
+			text-decoration: underline;
+		}
+	}
+}
